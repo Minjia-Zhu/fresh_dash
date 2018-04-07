@@ -14,7 +14,7 @@ This program requires the Python requests library, which you can install via:
 `pip install -r requirements.txt`.
 
 Sample usage of the program:
-`python sample.py --term="bars" --location="San Francisco, CA"`
+`python YelpAPI.py --term="bars" --location="San Francisco, CA"`
 """
 from __future__ import print_function
 
