@@ -21,6 +21,8 @@ import sys
 import urllib
 from operator import itemgetter
 
+KEY = "iia7j-JKMX3Ehf6TPy1E44djgiqOGQbtKdQkZRA0KCO-7OcTtNfFRtjO6npQGoqttgXfczZ-tcg4sJ9jHaRLuO34Ak02eGf0JgfbslFyiJRo5qmipHFk-UK9WyHJWnYx"
+CLIENT_ID = "isE5SSX6DGhmEIjAeNDWqQ"
 
 # This client code can run on Python 2.x or 3.x.  Your imports can be
 # simpler if you only need one of those.
