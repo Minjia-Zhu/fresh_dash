@@ -1,3 +1,5 @@
+# https://shirishkadam.com/tag/spacy/
+# https://www.analyticsvidhya.com/blog/2017/04/natural-language-processing-made-easy-using-spacy-%E2%80%8Bin-python/
 import spacy
 from collections import Counter
 
