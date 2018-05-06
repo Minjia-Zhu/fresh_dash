@@ -4,15 +4,15 @@ import spacy
 from collections import Counter
 
 nlp = spacy.load('en')
-document = str(open('train_texts.txt').read())
-
+document = open('train_texts.txt').read()
+doc = nlp(document)
 
 # Predefined variable
-all_tags = {w.pos: w.pos_ for w in document}
+all_tags = {w.pos: w.pos_ for w in doc}
 noisy_pos_tags = ['PROP','DT','IN']
 min_token_length = 2
 
-def process(document, nlp):
+def generate_features(document, nlp):
     doc = nlp(document)
     sent_list = list(doc.sents)
     sent = sent_list[0]
@@ -32,7 +32,7 @@ def process(document, nlp):
             nbor_pos = doc[token.i + 1].tag_
         if token.dep_ == "ROOT":
             root_token = token.tag_
-    return pos
+    return p
 
 # Helper function
 def isNoise(token):
@@ -47,6 +47,8 @@ def isNoise(token):
     elif len(token.string) <= min_token_length:
         is_noise = True
     return is_noise
+
+    
 
 def cleanup(token, lower = True):
     if lower:
@@ -69,8 +71,8 @@ def pos_words (sentence, token, ptag):
 
 
 # top unigrams used in the reviews
-cleaned_list = [cleanup(word.string) for word in document if not isNoise(word)]
+cleaned_list = [cleanup(word.string) for word in doc if not isNoise(word)]
 Counter(cleaned_list).most_common(5)
 
 # Check all adj used with the term food
-pos_words(document, 'food', 'ADJ')
+pos_words(doc, 'food', 'ADJ')
