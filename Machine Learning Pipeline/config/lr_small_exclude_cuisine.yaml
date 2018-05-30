@@ -1,0 +1,37 @@
+#################################
+#        Fresh Dash             #
+#     Model experiments         #
+#################################
+
+#################################
+#   Import & Select Features    #
+#################################
+features_path:
+    '../Data/Features/'
+base_table:
+    'features_base_ex_cuisine.csv'
+
+tm_table:
+    'features_tm.csv'
+
+ngram_table:
+    'features_ngram.csv'
+
+features_groups:
+    ['BASE', 'BASE+TM', 'BASE+NGRAM', 'ALL']
+
+
+#################################
+#       Model selection         #
+#################################
+
+models_to_run: [ 'LR']
+grid_size: 'small'
+balanced: True
+
+#################################
+#    Get plot in notebook       #
+#################################
+
+plot:
+    False
