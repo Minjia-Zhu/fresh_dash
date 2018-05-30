@@ -26,7 +26,7 @@ features_groups:
 #################################
 
 models_to_run: [ 'LR']
-grid_size: 'test'
+grid_size: 'large'
 balanced: True
 
 #################################
@@ -34,4 +34,4 @@ balanced: True
 #################################
 
 plot:
-    True
+    False
