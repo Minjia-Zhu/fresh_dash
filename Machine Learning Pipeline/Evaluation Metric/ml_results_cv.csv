@@ -1,0 +1,206 @@
+threshold,model_type,clf,parameters,MSE,auc-roc,p_at_1,p_at_2,p_at_5,p_at_10,p_at_20,cv_avg_precision
+10,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 1e-05, 'penalty': 'l1'}",0.4706766917293233,0.5,0.9696969696969697,0.9848484848484849,0.9939759036144579,0.9969879518072289,0.8541353383458646,0.47969704758816
+10,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 1e-05, 'penalty': 'l2'}",0.3804511278195489,0.6472358771420273,0.5757575757575758,0.5757575757575758,0.6204819277108434,0.6114457831325302,0.6330827067669172,0.5885335946185616
+10,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 0.001, 'penalty': 'l1'}",0.3837593984962406,0.644185303514377,0.5757575757575758,0.6060606060606061,0.6265060240963856,0.6234939759036144,0.6406015037593985,0.5908367812413798
+10,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 0.001, 'penalty': 'l2'}",0.3849624060150376,0.6463206142898634,0.5454545454545454,0.6363636363636364,0.6566265060240963,0.6265060240963856,0.631578947368421,0.592163711094306
+10,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 0.1, 'penalty': 'l1'}",0.3873684210526316,0.6520331106593087,0.6363636363636364,0.6515151515151515,0.6807228915662651,0.6807228915662651,0.6451127819548872,0.6007729004674995
+10,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 0.1, 'penalty': 'l2'}",0.38857142857142857,0.6501090981702005,0.7575757575757576,0.696969696969697,0.6686746987951807,0.6566265060240963,0.643609022556391,0.5922568135167283
+10,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 1, 'penalty': 'l1'}",0.38706766917293234,0.6488242448446122,0.7272727272727273,0.7272727272727273,0.6626506024096386,0.6566265060240963,0.6300751879699248,0.5951861002193082
+10,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 1, 'penalty': 'l2'}",0.38766917293233083,0.6482818399651467,0.7272727272727273,0.7121212121212122,0.6807228915662651,0.6475903614457831,0.631578947368421,0.5922593829430254
+10,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 10, 'penalty': 'l1'}",0.38586466165413535,0.6477612184141738,0.7575757575757576,0.7121212121212122,0.6746987951807228,0.6506024096385542,0.6285714285714286,0.5918145427997669
+10,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 10, 'penalty': 'l2'}",0.38646616541353385,0.6479351219866397,0.7272727272727273,0.7121212121212122,0.6807228915662651,0.6475903614457831,0.6285714285714286,0.5922597046283623
+10,NB,GaussianNB(priors=None),{},0.4583458646616541,0.6026134548358989,0.06060606060606061,0.3939393939393939,0.5662650602409639,0.5632530120481928,0.5939849624060151,0.5474643303930499
+20,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 1e-05, 'penalty': 'l1'}",0.2463157894736842,0.5,0.0,0.0,0.0,0.0,0.0,0.2524188449637561
+20,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 1e-05, 'penalty': 'l2'}",0.34706766917293236,0.664293363814513,0.3939393939393939,0.3787878787878788,0.4457831325301205,0.45180722891566266,0.41654135338345866,0.37247582694203535
+20,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 0.001, 'penalty': 'l1'}",0.34827067669172934,0.6637052758361618,0.3333333333333333,0.3787878787878788,0.463855421686747,0.4608433734939759,0.42105263157894735,0.37566532233623173
+20,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 0.001, 'penalty': 'l2'}",0.34345864661654135,0.6692626341469119,0.3333333333333333,0.3787878787878788,0.4939759036144578,0.4608433734939759,0.42105263157894735,0.3750795043545619
+20,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 0.1, 'penalty': 'l1'}",0.35218045112781954,0.6722773767865549,0.3939393939393939,0.5,0.42771084337349397,0.46686746987951805,0.42406015037593986,0.38592810665565214
+20,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 0.1, 'penalty': 'l2'}",0.35969924812030074,0.6690443545990234,0.42424242424242425,0.48484848484848486,0.43373493975903615,0.46987951807228917,0.4255639097744361,0.37509011532739195
+20,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 1, 'penalty': 'l1'}",0.35969924812030074,0.6656844087011684,0.3939393939393939,0.48484848484848486,0.4397590361445783,0.463855421686747,0.42406015037593986,0.380886070282439
+20,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 1, 'penalty': 'l2'}",0.36120300751879697,0.6660015961691939,0.42424242424242425,0.4696969696969697,0.4457831325301205,0.4608433734939759,0.4270676691729323,0.37509402959392174
+20,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 10, 'penalty': 'l1'}",0.3606015037593985,0.665269775006407,0.3939393939393939,0.48484848484848486,0.43373493975903615,0.4608433734939759,0.4255639097744361,0.37596163648076
+20,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 10, 'penalty': 'l2'}",0.3606015037593985,0.6652200774307717,0.3939393939393939,0.4696969696969697,0.4397590361445783,0.4578313253012048,0.4255639097744361,0.37509321067101953
+20,NB,GaussianNB(priors=None),{},0.5942857142857143,0.6177364800668871,0.030303030303030304,0.015151515151515152,0.3253012048192771,0.3825301204819277,0.3894736842105263,0.32475286727927594
+30,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 1e-05, 'penalty': 'l1'}",0.1368421052631579,0.5,0.0,0.0,0.0,0.0,0.0,0.14335306235065104
+30,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 1e-05, 'penalty': 'l2'}",0.32781954887218046,0.6744886472412606,0.30303030303030304,0.25757575757575757,0.3433734939759036,0.31626506024096385,0.2736842105263158,0.2293771808706062
+30,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 0.001, 'penalty': 'l1'}",0.33052631578947367,0.6740222843358732,0.24242424242424243,0.2878787878787879,0.3433734939759036,0.32831325301204817,0.26766917293233083,0.24000361993772906
+30,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 0.001, 'penalty': 'l2'}",0.3308270676691729,0.6815216142742275,0.24242424242424243,0.2878787878787879,0.35542168674698793,0.32228915662650603,0.2721804511278195,0.2328717991128944
+30,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 0.1, 'penalty': 'l1'}",0.3485714285714286,0.683665811540376,0.2727272727272727,0.3181818181818182,0.3373493975903614,0.32831325301204817,0.2796992481203007,0.2511086885702721
+30,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 0.1, 'penalty': 'l2'}",0.35278195488721803,0.6833518397978328,0.30303030303030304,0.3181818181818182,0.35542168674698793,0.32831325301204817,0.2646616541353383,0.23284758908467412
+30,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 1, 'penalty': 'l1'}",0.35849624060150376,0.6808408316422253,0.2727272727272727,0.2727272727272727,0.3433734939759036,0.3253012048192771,0.26917293233082706,0.24594229003605142
+30,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 1, 'penalty': 'l2'}",0.3581954887218045,0.6809587624918635,0.2727272727272727,0.2727272727272727,0.3493975903614458,0.32228915662650603,0.2631578947368421,0.23284878243663135
+30,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 10, 'penalty': 'l1'}",0.3606015037593985,0.6794907531492898,0.24242424242424243,0.2878787878787879,0.3493975903614458,0.3192771084337349,0.2661654135338346,0.23867177339925805
+30,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 10, 'penalty': 'l2'}",0.36,0.6795635026993913,0.24242424242424243,0.2878787878787879,0.3493975903614458,0.32228915662650603,0.2661654135338346,0.23284878243663135
+30,NB,GaussianNB(priors=None),{},0.7028571428571428,0.6037282229965157,0.030303030303030304,0.015151515151515152,0.006024096385542169,0.0030120481927710845,0.0015037593984962407,0.1776105551005225
+40,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 1e-05, 'penalty': 'l1'}",0.06195488721804511,0.5,0.0,0.0,0.0,0.0,0.0,0.06705972297401983
+40,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 1e-05, 'penalty': 'l2'}",0.3227067669172932,0.7117510279931643,0.15151515151515152,0.13636363636363635,0.20481927710843373,0.19879518072289157,0.14736842105263157,0.12444427591396261
+40,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 0.001, 'penalty': 'l1'}",0.322406015037594,0.7067596970649667,0.15151515151515152,0.13636363636363635,0.18072289156626506,0.18674698795180722,0.14586466165413534,0.130686396737368
+40,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 0.001, 'penalty': 'l2'}",0.31759398496240604,0.7186629396402258,0.15151515151515152,0.13636363636363635,0.20481927710843373,0.18674698795180722,0.13984962406015036,0.12048340209960742
+40,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 0.1, 'penalty': 'l1'}",0.3443609022556391,0.709321508947665,0.24242424242424243,0.18181818181818182,0.16265060240963855,0.14759036144578314,0.13984962406015036,0.13679419773156137
+40,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 0.1, 'penalty': 'l2'}",0.34977443609022557,0.7091440809071864,0.21212121212121213,0.16666666666666666,0.1686746987951807,0.14759036144578314,0.13984962406015036,0.1204837479493931
+40,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 1, 'penalty': 'l1'}",0.3554887218045113,0.7029091973093194,0.18181818181818182,0.15151515151515152,0.1746987951807229,0.14156626506024098,0.13383458646616542,0.12914935140072537
+40,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 1, 'penalty': 'l2'}",0.3548872180451128,0.7029403250357191,0.18181818181818182,0.15151515151515152,0.1746987951807229,0.14457831325301204,0.13383458646616542,0.1204837479493931
+40,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 10, 'penalty': 'l1'}",0.3560902255639098,0.6993730875903093,0.21212121212121213,0.15151515151515152,0.16265060240963855,0.14156626506024098,0.13383458646616542,0.12435252351643393
+40,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 10, 'penalty': 'l2'}",0.3560902255639098,0.7000189879131038,0.21212121212121213,0.15151515151515152,0.16265060240963855,0.14156626506024098,0.13383458646616542,0.1204837479493931
+40,NB,GaussianNB(priors=None),{},0.7984962406015037,0.5589076658251806,0.0,0.0,0.0,0.0,0.0,0.06634679374835176
+50,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 1e-05, 'penalty': 'l1'}",0.026165413533834586,0.5,0.0,0.0,0.0,0.0,0.0,0.028303275058238937
+50,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 1e-05, 'penalty': 'l2'}",0.3076691729323308,0.715881095894301,0.06060606060606061,0.07575757575757576,0.10240963855421686,0.08734939759036145,0.06315789473684211,0.061927309490058535
+50,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 0.001, 'penalty': 'l1'}",0.3118796992481203,0.7139766281158371,0.06060606060606061,0.09090909090909091,0.0963855421686747,0.09036144578313253,0.06315789473684211,0.06459178060497131
+50,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 0.001, 'penalty': 'l2'}",0.29984962406015037,0.7210886527088525,0.06060606060606061,0.06060606060606061,0.10843373493975904,0.09337349397590361,0.061654135338345864,0.06128102089705828
+50,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 0.1, 'penalty': 'l1'}",0.3067669172932331,0.7232930785996748,0.06060606060606061,0.07575757575757576,0.10240963855421686,0.08132530120481928,0.06917293233082707,0.07040749727089521
+50,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 0.1, 'penalty': 'l2'}",0.30586466165413534,0.7187741830134963,0.06060606060606061,0.06060606060606061,0.0963855421686747,0.0783132530120482,0.06766917293233082,0.06129479811553912
+50,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 1, 'penalty': 'l1'}",0.31548872180451126,0.7102227144611759,0.09090909090909091,0.06060606060606061,0.0963855421686747,0.0783132530120482,0.06616541353383458,0.06932796921759768
+50,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 1, 'penalty': 'l2'}",0.3184962406015038,0.7115574393161667,0.09090909090909091,0.06060606060606061,0.0963855421686747,0.0783132530120482,0.06616541353383458,0.06129479811553912
+50,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 10, 'penalty': 'l1'}",0.3206015037593985,0.7091719736178853,0.09090909090909091,0.06060606060606061,0.08433734939759036,0.0783132530120482,0.06616541353383458,0.06335520352437336
+50,LR,"LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 10, 'penalty': 'l2'}",0.32030075187969925,0.7096263480366056,0.09090909090909091,0.06060606060606061,0.08433734939759036,0.0783132530120482,0.06616541353383458,0.06129479811553912
+50,NB,GaussianNB(priors=None),{},0.8294736842105264,0.5303791896516226,0.0,0.0,0.0,0.0,0.0,0.027646992787575132
