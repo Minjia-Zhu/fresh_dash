@@ -27,6 +27,8 @@ from sklearn.cross_validation import cross_val_score
 from sklearn.model_selection import cross_validate
 from sklearn.metrics.scorer import make_scorer
 
+
+
 csv.field_size_limit(sys.maxsize)
 pd.options.display.max_columns = 999
 pd.options.display.max_rows = 999
@@ -186,7 +188,7 @@ def generate_features_groups(features_tables):
     return df, features_cols
     
     
-def clf_loop(features_tables, models_to_run, clfs, grid, balanced = True, features_groups = ['BASE', 'BASE+NGRAM', 'BASE+TM', 'ALL'], plot = False):
+def clf_loop(features_tables, models_to_run, clfs, grid, features_groups, balanced, plot):
     """Runs the loop using models_to_run, clfs, gridm and the data
     """
     results_df =  pd.DataFrame(columns=('features_group','model_type','clf', 'parameters', 'MSE','auc-roc',
@@ -283,9 +285,10 @@ def main(config_file_path):
 		features_groups = config['features_groups']
 		models_to_run = config['models_to_run']
 		grid_size = config['grid_size']
-
+		balanced = config['balanced']
+		plot = config['plot']
 		clfs, grid = define_clfs_params(grid_size)
-		results = clf_loop(features_tables, models_to_run, clfs, grid, features_groups, plot = False)
+		results = clf_loop(features_tables, models_to_run, clfs, grid, features_groups, balanced, plot)
 
 if __name__=="__main__":
     if len(sys.argv) != 2:

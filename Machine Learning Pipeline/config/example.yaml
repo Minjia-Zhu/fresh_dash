@@ -27,3 +27,11 @@ features_groups:
 
 models_to_run: [ 'RF']
 grid_size: 'test'
+balanced: True
+
+#################################
+#    Get plot in notebook       #
+#################################
+
+plot:
+    True
