@@ -26,11 +26,11 @@
 
 * /Topic Modeling: 
 
-  * Code 
+  * code 
 
-  * Visualization demo
+  * visualization demo in Jupyter Notebook
 
-  * mallet: To replicate labeled-LDA result, 1. use R code to generate rev_tm_violation_rating.txt. 2. run command below in the terminal:
+  * mallet: to replicate labeled-LDA result, 1. use R code to generate rev_tm_violation_rating.txt. 2. run command below in the terminal:
 
   * ```
     bin/mallet import-file --input rev_tm_violation_rating.txt --output yelp-short.seq --stoplist-file yelp.stops --label-as-features --keep-sequence --line-regex '([^\t]+)\t([^\t]+)\t(.*)'
@@ -38,7 +38,7 @@
     bin/mallet run cc.mallet.topics.LabeledLDA --input yelp-short.seq --output-topic-keys yelp-llda.keys --output-doc-topics docsAsTopicsProbs.txt
     ```
 
-    
+    the output is *rev_tm_violation_rating.txt*
 
 **/Machine Learning Pipeline**
 
