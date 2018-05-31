@@ -188,7 +188,7 @@ def generate_features_groups(features_tables):
     return df, features_cols
     
     
-def clf_loop(features_tables, models_to_run, clfs, grid, features_groups, balanced, plot):
+def clf_loop(features_tables, models_to_run, clfs, grid, features_groups, balanced, plot, output_name):
     """Runs the loop using models_to_run, clfs, gridm and the data
     """
     results_df =  pd.DataFrame(columns=('features_group','model_type','clf', 'parameters', 'MSE','auc-roc',
@@ -260,10 +260,10 @@ def clf_loop(features_tables, models_to_run, clfs, grid, features_groups, balanc
                     print('Error:',e)
                     continue
 
-    filename = 'ml_results_cv'
+    filename = 'ml_results_cv_'
     if not balanced:
         filename +="_imbalanced"
-    results_df.to_csv("mloutput/" + filename +'.csv', index=False)
+    results_df.to_csv("mloutput/" + filename + output_name +'.csv', index=False)
     return (models,data)
 
 
@@ -286,9 +286,10 @@ def main(config_file_path):
 		models_to_run = config['models_to_run']
 		grid_size = config['grid_size']
 		balanced = config['balanced']
+		output_name = config['output_name']
 		plot = config['plot']
 		clfs, grid = define_clfs_params(grid_size)
-		results = clf_loop(features_tables, models_to_run, clfs, grid, features_groups, balanced, plot)
+		results = clf_loop(features_tables, models_to_run, clfs, grid, features_groups, balanced, plot, output_name)
 
 if __name__=="__main__":
     if len(sys.argv) != 2:

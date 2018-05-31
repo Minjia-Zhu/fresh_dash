@@ -28,6 +28,7 @@ features_groups:
 models_to_run: [ 'LR']
 grid_size: 'test'
 balanced: True
+output_name: 'example'
 
 #################################
 #    Get plot in notebook       #
