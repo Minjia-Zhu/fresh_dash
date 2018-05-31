@@ -1,10 +1,58 @@
-# fresh_dash
+FreshDash
 
-## Data:
-https://drive.google.com/drive/folders/1t1NmlIciFvFvpgLpTxEqnbOjyEh7H_UH
-## Proposal: 
-https://docs.google.com/document/d/1ZTZaGYTm8gBoJU_cRWt5cG3fv0IieZ2AJ90z5MwhUhA/edit
+Using Yelp reviews to optimize restaurant inspection
 
-## Yelp API Credentials:
-- Client ID: isE5SSX6DGhmEIjAeNDWqQ
-- API Key: iia7j-JKMX3Ehf6TPy1E44djgiqOGQbtKdQkZRA0KCO-7OcTtNfFRtjO6npQGoqttgXfczZ-tcg4sJ9jHaRLuO34Ak02eGf0JgfbslFyiJRo5qmipHFk-UK9WyHJWnYx
+
+
+Data Sources:
+
+- Seattle Yelp Data
+- Seattle Food Establishment Inspection Data
+
+Code Structure
+
+/Data
+
+- /features: features tables.
+- /Seattle: put raw Yelp review, merged inspection instances, and inspection record data here.
+
+/Data Exploration
+
+- Link inspection record
+- Data cleaning
+- Exploratory analysis and visualization
+
+/Feature Generation
+
+- /Ngram: code and output
+- /Topic Modeling: 
+  - Code 
+  - Visualization demo
+  - mallet: To replicate labeled-LDA result, 1. use R code to generate rev_tm_violation_rating.txt. 2. run command below in the terminal:
+
+```
+bin/mallet import-file --input rev_tm_violation_rating.txt --output yelp-short.seq --stoplist-file yelp.stops --label-as-features --keep-sequence --line-regex '([^\t]+)\t([^\t]+)\t(.*)'
+        
+bin/mallet run cc.mallet.topics.LabeledLDA --input yelp-short.seq --output-topic-keys yelp-llda.keys --output-doc-topics docsAsTopicsProbs.txt
+```
+    
+
+/Machine Learning Pipeline
+
+- /config: machine learning model training configuration yaml files
+- /mloutput: model evaluation output
+- classifiers.py: model training
+```
+python3 classifiers.py <config file path>
+```
+- MagicLoop.ipynb: run classifiers.py in Jupyter Notebook for handy visualization and model comparison
+
+Contributors
+
+Ran Bi,
+
+Shambhavi Mohan,
+
+Minjia Zhu
+
+@Uchicago Harris, CAPP
