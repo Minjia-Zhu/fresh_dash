@@ -232,7 +232,7 @@ def clf_loop(features_tables, models_to_run, clfs, grid, features_groups, balanc
                     precision = precision_score(y_test, y_pred)
                     recall = recall_score(y_test, y_pred)
                     cv_scores = cross_val_score(clf, X, y, cv=5,scoring='average_precision')
-                    feature_importance = get_feature_importance(clf, models_to_run[index])[0]
+                    #feature_importance = get_feature_importance(clf, models_to_run[index])[0]
 
                     y_pred_probs_sorted, y_test_sorted = zip(*sorted(zip(y_pred_probs, y_test), reverse=True))
                     results_df.loc[len(results_df)] = [features_group, models_to_run[index],clf, p,mse,
@@ -244,7 +244,7 @@ def clf_loop(features_tables, models_to_run, clfs, grid, features_groups, balanc
                                                        precision_at_k(y_test_sorted,y_pred_probs_sorted,20.0),
                                                        cv_scores.mean(),
                                                        accuracy, f1, precision, recall,
-                                                       feature_importance]
+                                                       0]
                     if plot:
                     		plot_precision_recall_n(y_test,y_pred_probs,clf)
                     		feat_imp = pd.Series(feature_importance, features_cols[features_group]).sort_values(ascending=False)[:20]
